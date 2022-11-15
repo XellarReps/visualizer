@@ -11,7 +11,7 @@ model
 To run the code, you need to:
 - create a directory:
 ```bash
-mkdir install
+mkdir inputs
 ```
 - put a file with the extension .onnx to the /inputs directory;
 - compile and run the program with the command line argument, which is the name of the onnx model file.
