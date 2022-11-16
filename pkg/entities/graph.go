@@ -47,10 +47,10 @@ func GraphProtoToGraph(graphProto *proto.GraphProto) Graph {
 			if dimVal == nil {
 				shape = append(shape, "?")
 			}
-			if dimVal != nil && reflect.TypeOf(dimVal).String() == "*proto.TensorShapeProto_Dimension_DimParam" {
+			if dimVal != nil && reflect.TypeOf(dimVal).String() == dimParamType {
 				shape = append(shape, dim.GetDimParam())
 			}
-			if dimVal != nil && reflect.TypeOf(dimVal).String() == "*proto.TensorShapeProto_Dimension_DimValue" {
+			if dimVal != nil && reflect.TypeOf(dimVal).String() == dimValueType {
 				shape = append(shape, dim.GetDimValue())
 			}
 		}
