@@ -26,6 +26,11 @@ type Graph struct {
 	Nodes   []Node
 }
 
+const (
+	dimValueType = "*proto.TensorShapeProto_Dimension_DimValue"
+	dimParamType = "*proto.TensorShapeProto_Dimension_DimParam"
+)
+
 func GraphProtoToGraph(graphProto *proto.GraphProto) Graph {
 	var graph Graph
 
@@ -72,10 +77,10 @@ func GraphProtoToGraph(graphProto *proto.GraphProto) Graph {
 			if dimVal == nil {
 				shape = append(shape, "?")
 			}
-			if dimVal != nil && reflect.TypeOf(dimVal).String() == "*proto.TensorShapeProto_Dimension_DimParam" {
+			if dimVal != nil && reflect.TypeOf(dimVal).String() == dimParamType {
 				shape = append(shape, dim.GetDimParam())
 			}
-			if dimVal != nil && reflect.TypeOf(dimVal).String() == "*proto.TensorShapeProto_Dimension_DimValue" {
+			if dimVal != nil && reflect.TypeOf(dimVal).String() == dimValueType {
 				shape = append(shape, dim.GetDimValue())
 			}
 		}
