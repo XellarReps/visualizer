@@ -70,6 +70,7 @@ func main() {
 
 	file := os.Stdout
 	fileFlag := false
+	// TODO: fix a bug with overwriting
 	if args.writeMode == "file" {
 		file, err = os.OpenFile(args.outputPath, os.O_CREATE|os.O_WRONLY, 0777)
 		if err != nil {
