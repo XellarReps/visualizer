@@ -2,6 +2,7 @@ package entities
 
 import (
 	"fmt"
+	"os"
 	"reflect"
 	"visualizer/pkg/proto"
 )
@@ -116,73 +117,151 @@ func GraphProtoToGraph(graphProto *proto.GraphProto) Graph {
 	return graph
 }
 
-func (g *Graph) PrintGraphInput() {
-	fmt.Println("======== Graph Inputs ========")
-	fmt.Printf("Count inputs: %d\n", len(g.Inputs))
+func (g *Graph) PrintGraphInput(file *os.File) error {
+	if _, err := file.WriteString("======== Graph Inputs ========\n"); err != nil {
+		return err
+	}
+	if _, err := file.WriteString(fmt.Sprintf("Count inputs: %d\n", len(g.Inputs))); err != nil {
+		return err
+	}
 
 	for _, input := range g.Inputs {
-		fmt.Printf("\n")
-		fmt.Printf("Name: %s\n", input.Name)
-		fmt.Printf("Type: %s\n", input.Type)
-		fmt.Printf("Dimension: %d\n", input.Dimension)
-
-		fmt.Printf("Shape: ")
-		for i := 0; i < len(input.Shape)-1; i++ {
-			fmt.Printf("%v * ", input.Shape[i])
+		if _, err := file.WriteString("\n"); err != nil {
+			return err
 		}
-		fmt.Println(input.Shape[len(input.Shape)-1])
+		if _, err := file.WriteString(fmt.Sprintf("Name: %s\n", input.Name)); err != nil {
+			return err
+		}
+		if _, err := file.WriteString(fmt.Sprintf("Type: %s\n", input.Type)); err != nil {
+			return err
+		}
+		if _, err := file.WriteString(fmt.Sprintf("Dimension: %d\n", input.Dimension)); err != nil {
+			return err
+		}
+
+		if _, err := file.WriteString("Shape: "); err != nil {
+			return err
+		}
+		for i := 0; i < len(input.Shape)-1; i++ {
+			if _, err := file.WriteString(fmt.Sprintf("%v * ", input.Shape[i])); err != nil {
+				return err
+			}
+		}
+		if _, err := file.WriteString(fmt.Sprintf("%v\n", input.Shape[len(input.Shape)-1])); err != nil {
+			return err
+		}
 	}
 
-	fmt.Println("==============================")
+	_, err := file.WriteString("==============================\n")
+	return err
 }
 
-func (g *Graph) PrintGraphOutput() {
-	fmt.Println("======== Graph Outputs ========")
-	fmt.Printf("Count outputs: %d\n", len(g.Inputs))
+func (g *Graph) PrintGraphOutput(file *os.File) error {
+	if _, err := file.WriteString("======== Graph Outputs ========\n"); err != nil {
+		return err
+	}
+	if _, err := file.WriteString(fmt.Sprintf("Count outputs: %d\n", len(g.Inputs))); err != nil {
+		return err
+	}
 
 	for _, output := range g.Outputs {
-		fmt.Printf("\n")
-		fmt.Printf("Name: %s\n", output.Name)
-		fmt.Printf("Type: %s\n", output.Type)
-		fmt.Printf("Dimension: %d\n", output.Dimension)
-
-		fmt.Printf("Shape: ")
-		for i := 0; i < len(output.Shape)-1; i++ {
-			fmt.Printf("%v * ", output.Shape[i])
+		if _, err := file.WriteString("\n"); err != nil {
+			return err
 		}
-		fmt.Println(output.Shape[len(output.Shape)-1])
+		if _, err := file.WriteString(fmt.Sprintf("Name: %s\n", output.Name)); err != nil {
+			return err
+		}
+		if _, err := file.WriteString(fmt.Sprintf("Type: %s\n", output.Type)); err != nil {
+			return err
+		}
+		if _, err := file.WriteString(fmt.Sprintf("Dimension: %d\n", output.Dimension)); err != nil {
+			return err
+		}
+
+		if _, err := file.WriteString("Shape: "); err != nil {
+			return err
+		}
+		for i := 0; i < len(output.Shape)-1; i++ {
+			if _, err := file.WriteString(fmt.Sprintf("%v * ", output.Shape[i])); err != nil {
+				return err
+			}
+		}
+		if _, err := file.WriteString(fmt.Sprintf("%v\n", output.Shape[len(output.Shape)-1])); err != nil {
+			return err
+		}
 	}
 
-	fmt.Println("===============================")
+	_, err := file.WriteString("===============================\n")
+	return err
 }
 
-func (g *Graph) PrintGraphNodes() {
-	fmt.Println("======== Graph Nodes ========")
-	fmt.Printf("Count nodes: %d\n", len(g.Nodes))
+func (g *Graph) PrintGraphNodes(file *os.File, mode string) error {
+	if mode == "graph" {
+		if _, err := file.WriteString("======== Graph Nodes ========\n"); err != nil {
+			return err
+		}
+		if _, err := file.WriteString(fmt.Sprintf("Count nodes: %d\n", len(g.Nodes))); err != nil {
+			return err
+		}
+	}
 
 	for _, node := range g.Nodes {
-		fmt.Printf("\n")
-		fmt.Printf("Name: %s\n", node.Name)
-		fmt.Printf("Type: %s\n", node.Type)
-
-		fmt.Printf("Inputs: ")
-		for _, input := range node.Input {
-			fmt.Printf("%s ", input)
+		if mode == "graph" {
+			if _, err := file.WriteString("\n"); err != nil {
+				return err
+			}
 		}
-		fmt.Printf("\n")
-
-		fmt.Printf("Outputs: ")
-		for _, output := range node.Output {
-			fmt.Printf("%s ", output)
+		if _, err := file.WriteString(fmt.Sprintf("Name: %s\n", node.Name)); err != nil {
+			return err
 		}
-		fmt.Printf("\n")
+		if _, err := file.WriteString(fmt.Sprintf("Type: %s\n", node.Type)); err != nil {
+			return err
+		}
+
+		if mode == "graph" {
+			if _, err := file.WriteString("Inputs: "); err != nil {
+				return err
+			}
+			for _, input := range node.Input {
+				if _, err := file.WriteString(fmt.Sprintf("%s ", input)); err != nil {
+					return err
+				}
+			}
+			if _, err := file.WriteString("\n"); err != nil {
+				return err
+			}
+
+			if _, err := file.WriteString("Outputs: "); err != nil {
+				return err
+			}
+			for _, output := range node.Output {
+				if _, err := file.WriteString(fmt.Sprintf("%s ", output)); err != nil {
+					return err
+				}
+			}
+			if _, err := file.WriteString("\n"); err != nil {
+				return err
+			}
+		}
 	}
 
-	fmt.Println("=============================")
+	_, err := file.WriteString("=============================\n")
+	return err
 }
 
-func (g *Graph) PrintGraph() {
-	g.PrintGraphInput()
-	g.PrintGraphOutput()
-	g.PrintGraphNodes()
+func (g *Graph) PrintGraph(file *os.File, mode string) error {
+	if mode == "graph" {
+		err := g.PrintGraphInput(file)
+		if err != nil {
+			return err
+		}
+	}
+	if mode == "graph" {
+		err := g.PrintGraphOutput(file)
+		if err != nil {
+			return err
+		}
+	}
+	err := g.PrintGraphNodes(file, mode)
+	return err
 }

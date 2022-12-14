@@ -1,28 +1,96 @@
 package main
 
 import (
+	"errors"
+	"flag"
 	"fmt"
 	"os"
 	"visualizer/pkg/entities"
 	"visualizer/pkg/parser"
 )
 
+type commandArgs struct {
+	inputPath  string
+	writeMode  string
+	infoMode   string
+	outputPath string
+}
+
+type flagParams struct {
+	name  string
+	value string
+	usage string
+}
+
 func main() {
-	if len(os.Args) <= 1 {
-		fmt.Println("file name not specified (provide a command line argument)")
+	var args commandArgs
+
+	params := map[*string]flagParams{
+		&args.inputPath: {name: "input_path", value: "", usage: "input path (onnx file)"},
+		&args.writeMode: {name: "write_mode", value: "stdout", usage: "output mode: stdout, file"},
+		&args.infoMode: {name: "info_mode", value: "nodes", usage: "output filtering: graph (all information), " +
+			"nodes (will return a list of nodes)"},
+		&args.outputPath: {name: "output_path", value: "", usage: "output path"},
+	}
+
+	for ptr, param := range params {
+		flag.StringVar(ptr, param.name, param.value, param.usage)
+	}
+	flag.Parse()
+
+	if args.writeMode != "stdout" && args.writeMode != "file" {
+		err := errors.New("error in command line argument 'write_mode', read --help")
+		fmt.Println(err)
 		return
 	}
 
-	model, err := parser.ReadModelFromFile("inputs/" + os.Args[1])
+	if args.infoMode != "graph" && args.infoMode != "nodes" {
+		err := errors.New("error in command line argument 'info_mode', read --help")
+		fmt.Println(err)
+		return
+	}
+
+	if args.inputPath == "" {
+		err := errors.New("input path not specified")
+		fmt.Println(err)
+		return
+	}
+
+	model, err := parser.ReadModelFromFile(args.inputPath)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	modelInfo := entities.GetModelInfo(model)
-	modelInfo.PrintModelInfo()
+	if args.writeMode == "file" && args.outputPath == "" {
+		err := errors.New("output path not specified")
+		fmt.Println(err)
+		return
+	}
+
+	file := os.Stdout
+	if args.writeMode == "file" {
+		file, err = os.Open(args.outputPath)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+	}
+
+	if args.infoMode == "graph" {
+		modelInfo := entities.GetModelInfo(model)
+		err := modelInfo.PrintModelInfo(file)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+	}
 
 	graphProto := model.GetGraph()
 	graph := entities.GraphProtoToGraph(graphProto)
-	graph.PrintGraph()
+	err = graph.PrintGraph(file, args.infoMode)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 }
