@@ -1,0 +1,1241 @@
+======== Model Info ========
+IR version: 3
+Model version: 0
+Producer name: tf2onnx
+Producer version: 0.4.0
+Domain: 
+============================
+======== Graph Inputs ========
+Count inputs: 113
+
+Name: input_tensor:0
+Type: FLOAT
+Dimension: 4
+Shape: unk__271 * 3 * 224 * 224
+
+Name: resnet_model/conv2d_44/kernel/read/_251__cf__251:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_43/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 2048
+
+Name: resnet_model/conv2d_43/kernel/read/_250__cf__250:0
+Type: FLOAT
+Dimension: 4
+Shape: 2048 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_42/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_42/kernel/read/_249__cf__249:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_41/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_41/kernel/read/_248__cf__248:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_40/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_40/kernel/read/_247__cf__247:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_39/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_39/kernel/read/_245__cf__245:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_38/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_38/kernel/read/_244__cf__244:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_37/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_37/kernel/read/_243__cf__243:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_36/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_36/kernel/read/_242__cf__242:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_35/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_35/kernel/read/_241__cf__241:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_34/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_34/kernel/read/_240__cf__240:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 1024 * 1 * 1
+
+Name: resnet_model/dense/kernel/read/_266__cf__266:0
+Type: FLOAT
+Dimension: 2
+Shape: 2048 * 1001
+
+Name: resnet_model/conv2d_33/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/dense/bias/read/_265__cf__265:0
+Type: FLOAT
+Dimension: 1
+Shape: 1001
+
+Name: resnet_model/conv2d/kernel/read/_212__cf__212:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 3 * 7 * 7
+
+Name: resnet_model/conv2d_33/kernel/read/_239__cf__239:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_21/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_21/kernel/read/_226__cf__226:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_20/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_20/kernel/read/_225__cf__225:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 128 * 1 * 1
+
+Name: resnet_model/conv2d_19/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_19/kernel/read/_223__cf__223:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 128 * 3 * 3
+
+Name: resnet_model/conv2d_18/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_18/kernel/read/_222__cf__222:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_17/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_17/kernel/read/_221__cf__221:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 128 * 1 * 1
+
+Name: resnet_model/conv2d_16/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_16/kernel/read/_220__cf__220:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 128 * 3 * 3
+
+Name: resnet_model/conv2d_15/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_15/kernel/read/_219__cf__219:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_14/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_14/kernel/read/_218__cf__218:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 128 * 1 * 1
+
+Name: resnet_model/conv2d_13/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_13/kernel/read/_217__cf__217:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 128 * 3 * 3
+
+Name: resnet_model/conv2d_12/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_12/kernel/read/_216__cf__216:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_11/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: reshape__269__270
+Type: INT64
+Dimension: 1
+Shape: 4
+
+Name: resnet_model/conv2d_11/kernel/read/_215__cf__215:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_32/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_32/kernel/read/_238__cf__238:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_31/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_31/kernel/read/_237__cf__237:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_30/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_30/kernel/read/_236__cf__236:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_29/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_29/kernel/read/_234__cf__234:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_28/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_28/kernel/read/_233__cf__233:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 1024 * 1 * 1
+
+Name: resnet_model/conv2d_27/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_27/kernel/read/_232__cf__232:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_26/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_26/kernel/read/_231__cf__231:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 256 * 3 * 3
+
+Name: resnet_model/conv2d_25/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_25/kernel/read/_230__cf__230:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_24/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 1024
+
+Name: resnet_model/conv2d_24/kernel/read/_229__cf__229:0
+Type: FLOAT
+Dimension: 4
+Shape: 1024 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_23/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_23/kernel/read/_228__cf__228:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 128 * 1 * 1
+
+Name: resnet_model/conv2d_22/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 128
+
+Name: resnet_model/conv2d_22/kernel/read/_227__cf__227:0
+Type: FLOAT
+Dimension: 4
+Shape: 128 * 128 * 3 * 3
+
+Name: resnet_model/batch_normalization/moving_variance/read/_3__cf__3:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_10/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/batch_normalization/moving_mean/read/_2__cf__2:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_10/kernel/read/_214__cf__214:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 64 * 1 * 1
+
+Name: resnet_model/batch_normalization/gamma/read/_1__cf__1:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_9/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/batch_normalization/beta/read/_0__cf__0:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_9/kernel/read/_264__cf__264:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 64 * 3 * 3
+
+Name: resnet_model/conv2d_8/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_8/kernel/read/_263__cf__263:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_7/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_52/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 2048
+
+Name: resnet_model/conv2d_7/kernel/read/_262__cf__262:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 64 * 1 * 1
+
+Name: resnet_model/conv2d_52/kernel/read/_260__cf__260:0
+Type: FLOAT
+Dimension: 4
+Shape: 2048 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_6/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_51/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_6/kernel/read/_261__cf__261:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 64 * 3 * 3
+
+Name: resnet_model/conv2d_51/kernel/read/_259__cf__259:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 512 * 3 * 3
+
+Name: resnet_model/conv2d_5/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_50/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_5/kernel/read/_257__cf__257:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 256 * 1 * 1
+
+Name: resnet_model/conv2d_50/kernel/read/_258__cf__258:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 2048 * 1 * 1
+
+Name: resnet_model/conv2d_4/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_49/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 2048
+
+Name: resnet_model/conv2d_4/kernel/read/_246__cf__246:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 64 * 1 * 1
+
+Name: resnet_model/conv2d_49/kernel/read/_256__cf__256:0
+Type: FLOAT
+Dimension: 4
+Shape: 2048 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_3/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_48/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_3/kernel/read/_235__cf__235:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 64 * 3 * 3
+
+Name: resnet_model/conv2d_48/kernel/read/_255__cf__255:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 512 * 3 * 3
+
+Name: resnet_model/conv2d_2/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 64
+
+Name: resnet_model/conv2d_47/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_2/kernel/read/_224__cf__224:0
+Type: FLOAT
+Dimension: 4
+Shape: 64 * 64 * 1 * 1
+
+Name: resnet_model/conv2d_47/kernel/read/_254__cf__254:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 2048 * 1 * 1
+
+Name: resnet_model/conv2d_1/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 256
+
+Name: resnet_model/conv2d_46/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 2048
+
+Name: resnet_model/conv2d_1/kernel/read/_213__cf__213:0
+Type: FLOAT
+Dimension: 4
+Shape: 256 * 64 * 1 * 1
+
+Name: resnet_model/conv2d_46/kernel/read/_253__cf__253:0
+Type: FLOAT
+Dimension: 4
+Shape: 2048 * 512 * 1 * 1
+
+Name: resnet_model/conv2d_45/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+
+Name: resnet_model/conv2d_45/kernel/read/_252__cf__252:0
+Type: FLOAT
+Dimension: 4
+Shape: 512 * 512 * 3 * 3
+
+Name: resnet_model/conv2d_44/Conv2D_bn_offset:0
+Type: FLOAT
+Dimension: 1
+Shape: 512
+==============================
+======== Graph Outputs ========
+Count outputs: 113
+
+Name: ArgMax:0
+Type: INT64
+Dimension: 1
+Shape: unk__272
+
+Name: softmax_tensor:0
+Type: FLOAT
+Dimension: 2
+Shape: unk__273 * 1001
+===============================
+======== Graph Nodes ========
+Count nodes: 130
+
+Name: resnet_model/conv2d/Conv2D
+Type: Conv
+Inputs: input_tensor:0 resnet_model/conv2d/kernel/read/_212__cf__212:0 
+Outputs: resnet_model/conv2d/Conv2D:0 
+
+Name: resnet_model/batch_normalization/FusedBatchNorm
+Type: BatchNormalization
+Inputs: resnet_model/conv2d/Conv2D:0 resnet_model/batch_normalization/gamma/read/_1__cf__1:0 resnet_model/batch_normalization/beta/read/_0__cf__0:0 resnet_model/batch_normalization/moving_mean/read/_2__cf__2:0 resnet_model/batch_normalization/moving_variance/read/_3__cf__3:0 
+Outputs: resnet_model/batch_normalization/FusedBatchNorm:0 
+
+Name: resnet_model/Relu
+Type: Relu
+Inputs: resnet_model/batch_normalization/FusedBatchNorm:0 
+Outputs: resnet_model/Relu:0 
+
+Name: resnet_model/max_pooling2d/MaxPool
+Type: MaxPool
+Inputs: resnet_model/Relu:0 
+Outputs: resnet_model/max_pooling2d/MaxPool:0 
+
+Name: Conv__128
+Type: Conv
+Inputs: resnet_model/max_pooling2d/MaxPool:0 resnet_model/conv2d_2/kernel/read/_224__cf__224:0 resnet_model/conv2d_2/Conv2D_bn_offset:0 
+Outputs: Conv__128:0 
+
+Name: resnet_model/Relu_1
+Type: Relu
+Inputs: Conv__128:0 
+Outputs: resnet_model/Relu_1:0 
+
+Name: Conv__129
+Type: Conv
+Inputs: resnet_model/Relu_1:0 resnet_model/conv2d_3/kernel/read/_235__cf__235:0 resnet_model/conv2d_3/Conv2D_bn_offset:0 
+Outputs: Conv__129:0 
+
+Name: resnet_model/Relu_2
+Type: Relu
+Inputs: Conv__129:0 
+Outputs: resnet_model/Relu_2:0 
+
+Name: Conv__130
+Type: Conv
+Inputs: resnet_model/Relu_2:0 resnet_model/conv2d_4/kernel/read/_246__cf__246:0 resnet_model/conv2d_4/Conv2D_bn_offset:0 
+Outputs: Conv__130:0 
+
+Name: Conv__123
+Type: Conv
+Inputs: resnet_model/max_pooling2d/MaxPool:0 resnet_model/conv2d_1/kernel/read/_213__cf__213:0 resnet_model/conv2d_1/Conv2D_bn_offset:0 
+Outputs: Conv__123:0 
+
+Name: resnet_model/add
+Type: Add
+Inputs: Conv__130:0 Conv__123:0 
+Outputs: resnet_model/add:0 
+
+Name: resnet_model/Relu_3
+Type: Relu
+Inputs: resnet_model/add:0 
+Outputs: resnet_model/Relu_3:0 
+
+Name: Conv__131
+Type: Conv
+Inputs: resnet_model/Relu_3:0 resnet_model/conv2d_5/kernel/read/_257__cf__257:0 resnet_model/conv2d_5/Conv2D_bn_offset:0 
+Outputs: Conv__131:0 
+
+Name: resnet_model/Relu_4
+Type: Relu
+Inputs: Conv__131:0 
+Outputs: resnet_model/Relu_4:0 
+
+Name: Conv__132
+Type: Conv
+Inputs: resnet_model/Relu_4:0 resnet_model/conv2d_6/kernel/read/_261__cf__261:0 resnet_model/conv2d_6/Conv2D_bn_offset:0 
+Outputs: Conv__132:0 
+
+Name: resnet_model/Relu_5
+Type: Relu
+Inputs: Conv__132:0 
+Outputs: resnet_model/Relu_5:0 
+
+Name: Conv__133
+Type: Conv
+Inputs: resnet_model/Relu_5:0 resnet_model/conv2d_7/kernel/read/_262__cf__262:0 resnet_model/conv2d_7/Conv2D_bn_offset:0 
+Outputs: Conv__133:0 
+
+Name: resnet_model/add_1
+Type: Add
+Inputs: Conv__133:0 resnet_model/Relu_3:0 
+Outputs: resnet_model/add_1:0 
+
+Name: resnet_model/Relu_6
+Type: Relu
+Inputs: resnet_model/add_1:0 
+Outputs: resnet_model/Relu_6:0 
+
+Name: Conv__138
+Type: Conv
+Inputs: resnet_model/Relu_6:0 resnet_model/conv2d_8/kernel/read/_263__cf__263:0 resnet_model/conv2d_8/Conv2D_bn_offset:0 
+Outputs: Conv__138:0 
+
+Name: resnet_model/Relu_7
+Type: Relu
+Inputs: Conv__138:0 
+Outputs: resnet_model/Relu_7:0 
+
+Name: Conv__139
+Type: Conv
+Inputs: resnet_model/Relu_7:0 resnet_model/conv2d_9/kernel/read/_264__cf__264:0 resnet_model/conv2d_9/Conv2D_bn_offset:0 
+Outputs: Conv__139:0 
+
+Name: resnet_model/Relu_8
+Type: Relu
+Inputs: Conv__139:0 
+Outputs: resnet_model/Relu_8:0 
+
+Name: Conv__140
+Type: Conv
+Inputs: resnet_model/Relu_8:0 resnet_model/conv2d_10/kernel/read/_214__cf__214:0 resnet_model/conv2d_10/Conv2D_bn_offset:0 
+Outputs: Conv__140:0 
+
+Name: resnet_model/add_2
+Type: Add
+Inputs: Conv__140:0 resnet_model/Relu_6:0 
+Outputs: resnet_model/add_2:0 
+
+Name: resnet_model/Relu_9
+Type: Relu
+Inputs: resnet_model/add_2:0 
+Outputs: resnet_model/Relu_9:0 
+
+Name: Conv__145
+Type: Conv
+Inputs: resnet_model/Relu_9:0 resnet_model/conv2d_12/kernel/read/_216__cf__216:0 resnet_model/conv2d_12/Conv2D_bn_offset:0 
+Outputs: Conv__145:0 
+
+Name: resnet_model/Relu_10
+Type: Relu
+Inputs: Conv__145:0 
+Outputs: resnet_model/Relu_10:0 
+
+Name: Conv__146
+Type: Conv
+Inputs: resnet_model/Relu_10:0 resnet_model/conv2d_13/kernel/read/_217__cf__217:0 resnet_model/conv2d_13/Conv2D_bn_offset:0 
+Outputs: Conv__146:0 
+
+Name: resnet_model/Relu_11
+Type: Relu
+Inputs: Conv__146:0 
+Outputs: resnet_model/Relu_11:0 
+
+Name: Conv__147
+Type: Conv
+Inputs: resnet_model/Relu_11:0 resnet_model/conv2d_14/kernel/read/_218__cf__218:0 resnet_model/conv2d_14/Conv2D_bn_offset:0 
+Outputs: Conv__147:0 
+
+Name: Conv__152
+Type: Conv
+Inputs: resnet_model/Relu_9:0 resnet_model/conv2d_11/kernel/read/_215__cf__215:0 resnet_model/conv2d_11/Conv2D_bn_offset:0 
+Outputs: Conv__152:0 
+
+Name: resnet_model/add_3
+Type: Add
+Inputs: Conv__147:0 Conv__152:0 
+Outputs: resnet_model/add_3:0 
+
+Name: resnet_model/Relu_12
+Type: Relu
+Inputs: resnet_model/add_3:0 
+Outputs: resnet_model/Relu_12:0 
+
+Name: Conv__153
+Type: Conv
+Inputs: resnet_model/Relu_12:0 resnet_model/conv2d_15/kernel/read/_219__cf__219:0 resnet_model/conv2d_15/Conv2D_bn_offset:0 
+Outputs: Conv__153:0 
+
+Name: resnet_model/Relu_13
+Type: Relu
+Inputs: Conv__153:0 
+Outputs: resnet_model/Relu_13:0 
+
+Name: Conv__154
+Type: Conv
+Inputs: resnet_model/Relu_13:0 resnet_model/conv2d_16/kernel/read/_220__cf__220:0 resnet_model/conv2d_16/Conv2D_bn_offset:0 
+Outputs: Conv__154:0 
+
+Name: resnet_model/Relu_14
+Type: Relu
+Inputs: Conv__154:0 
+Outputs: resnet_model/Relu_14:0 
+
+Name: Conv__155
+Type: Conv
+Inputs: resnet_model/Relu_14:0 resnet_model/conv2d_17/kernel/read/_221__cf__221:0 resnet_model/conv2d_17/Conv2D_bn_offset:0 
+Outputs: Conv__155:0 
+
+Name: resnet_model/add_4
+Type: Add
+Inputs: Conv__155:0 resnet_model/Relu_12:0 
+Outputs: resnet_model/add_4:0 
+
+Name: resnet_model/Relu_15
+Type: Relu
+Inputs: resnet_model/add_4:0 
+Outputs: resnet_model/Relu_15:0 
+
+Name: Conv__160
+Type: Conv
+Inputs: resnet_model/Relu_15:0 resnet_model/conv2d_18/kernel/read/_222__cf__222:0 resnet_model/conv2d_18/Conv2D_bn_offset:0 
+Outputs: Conv__160:0 
+
+Name: resnet_model/Relu_16
+Type: Relu
+Inputs: Conv__160:0 
+Outputs: resnet_model/Relu_16:0 
+
+Name: Conv__161
+Type: Conv
+Inputs: resnet_model/Relu_16:0 resnet_model/conv2d_19/kernel/read/_223__cf__223:0 resnet_model/conv2d_19/Conv2D_bn_offset:0 
+Outputs: Conv__161:0 
+
+Name: resnet_model/Relu_17
+Type: Relu
+Inputs: Conv__161:0 
+Outputs: resnet_model/Relu_17:0 
+
+Name: Conv__162
+Type: Conv
+Inputs: resnet_model/Relu_17:0 resnet_model/conv2d_20/kernel/read/_225__cf__225:0 resnet_model/conv2d_20/Conv2D_bn_offset:0 
+Outputs: Conv__162:0 
+
+Name: resnet_model/add_5
+Type: Add
+Inputs: Conv__162:0 resnet_model/Relu_15:0 
+Outputs: resnet_model/add_5:0 
+
+Name: resnet_model/Relu_18
+Type: Relu
+Inputs: resnet_model/add_5:0 
+Outputs: resnet_model/Relu_18:0 
+
+Name: Conv__167
+Type: Conv
+Inputs: resnet_model/Relu_18:0 resnet_model/conv2d_21/kernel/read/_226__cf__226:0 resnet_model/conv2d_21/Conv2D_bn_offset:0 
+Outputs: Conv__167:0 
+
+Name: resnet_model/Relu_19
+Type: Relu
+Inputs: Conv__167:0 
+Outputs: resnet_model/Relu_19:0 
+
+Name: Conv__168
+Type: Conv
+Inputs: resnet_model/Relu_19:0 resnet_model/conv2d_22/kernel/read/_227__cf__227:0 resnet_model/conv2d_22/Conv2D_bn_offset:0 
+Outputs: Conv__168:0 
+
+Name: resnet_model/Relu_20
+Type: Relu
+Inputs: Conv__168:0 
+Outputs: resnet_model/Relu_20:0 
+
+Name: Conv__169
+Type: Conv
+Inputs: resnet_model/Relu_20:0 resnet_model/conv2d_23/kernel/read/_228__cf__228:0 resnet_model/conv2d_23/Conv2D_bn_offset:0 
+Outputs: Conv__169:0 
+
+Name: resnet_model/add_6
+Type: Add
+Inputs: Conv__169:0 resnet_model/Relu_18:0 
+Outputs: resnet_model/add_6:0 
+
+Name: resnet_model/Relu_21
+Type: Relu
+Inputs: resnet_model/add_6:0 
+Outputs: resnet_model/Relu_21:0 
+
+Name: Conv__174
+Type: Conv
+Inputs: resnet_model/Relu_21:0 resnet_model/conv2d_25/kernel/read/_230__cf__230:0 resnet_model/conv2d_25/Conv2D_bn_offset:0 
+Outputs: Conv__174:0 
+
+Name: resnet_model/Relu_22
+Type: Relu
+Inputs: Conv__174:0 
+Outputs: resnet_model/Relu_22:0 
+
+Name: Conv__175
+Type: Conv
+Inputs: resnet_model/Relu_22:0 resnet_model/conv2d_26/kernel/read/_231__cf__231:0 resnet_model/conv2d_26/Conv2D_bn_offset:0 
+Outputs: Conv__175:0 
+
+Name: resnet_model/Relu_23
+Type: Relu
+Inputs: Conv__175:0 
+Outputs: resnet_model/Relu_23:0 
+
+Name: Conv__176
+Type: Conv
+Inputs: resnet_model/Relu_23:0 resnet_model/conv2d_27/kernel/read/_232__cf__232:0 resnet_model/conv2d_27/Conv2D_bn_offset:0 
+Outputs: Conv__176:0 
+
+Name: Conv__181
+Type: Conv
+Inputs: resnet_model/Relu_21:0 resnet_model/conv2d_24/kernel/read/_229__cf__229:0 resnet_model/conv2d_24/Conv2D_bn_offset:0 
+Outputs: Conv__181:0 
+
+Name: resnet_model/add_7
+Type: Add
+Inputs: Conv__176:0 Conv__181:0 
+Outputs: resnet_model/add_7:0 
+
+Name: resnet_model/Relu_24
+Type: Relu
+Inputs: resnet_model/add_7:0 
+Outputs: resnet_model/Relu_24:0 
+
+Name: Conv__182
+Type: Conv
+Inputs: resnet_model/Relu_24:0 resnet_model/conv2d_28/kernel/read/_233__cf__233:0 resnet_model/conv2d_28/Conv2D_bn_offset:0 
+Outputs: Conv__182:0 
+
+Name: resnet_model/Relu_25
+Type: Relu
+Inputs: Conv__182:0 
+Outputs: resnet_model/Relu_25:0 
+
+Name: Conv__183
+Type: Conv
+Inputs: resnet_model/Relu_25:0 resnet_model/conv2d_29/kernel/read/_234__cf__234:0 resnet_model/conv2d_29/Conv2D_bn_offset:0 
+Outputs: Conv__183:0 
+
+Name: resnet_model/Relu_26
+Type: Relu
+Inputs: Conv__183:0 
+Outputs: resnet_model/Relu_26:0 
+
+Name: Conv__184
+Type: Conv
+Inputs: resnet_model/Relu_26:0 resnet_model/conv2d_30/kernel/read/_236__cf__236:0 resnet_model/conv2d_30/Conv2D_bn_offset:0 
+Outputs: Conv__184:0 
+
+Name: resnet_model/add_8
+Type: Add
+Inputs: Conv__184:0 resnet_model/Relu_24:0 
+Outputs: resnet_model/add_8:0 
+
+Name: resnet_model/Relu_27
+Type: Relu
+Inputs: resnet_model/add_8:0 
+Outputs: resnet_model/Relu_27:0 
+
+Name: Conv__189
+Type: Conv
+Inputs: resnet_model/Relu_27:0 resnet_model/conv2d_31/kernel/read/_237__cf__237:0 resnet_model/conv2d_31/Conv2D_bn_offset:0 
+Outputs: Conv__189:0 
+
+Name: resnet_model/Relu_28
+Type: Relu
+Inputs: Conv__189:0 
+Outputs: resnet_model/Relu_28:0 
+
+Name: Conv__190
+Type: Conv
+Inputs: resnet_model/Relu_28:0 resnet_model/conv2d_32/kernel/read/_238__cf__238:0 resnet_model/conv2d_32/Conv2D_bn_offset:0 
+Outputs: Conv__190:0 
+
+Name: resnet_model/Relu_29
+Type: Relu
+Inputs: Conv__190:0 
+Outputs: resnet_model/Relu_29:0 
+
+Name: Conv__191
+Type: Conv
+Inputs: resnet_model/Relu_29:0 resnet_model/conv2d_33/kernel/read/_239__cf__239:0 resnet_model/conv2d_33/Conv2D_bn_offset:0 
+Outputs: Conv__191:0 
+
+Name: resnet_model/add_9
+Type: Add
+Inputs: Conv__191:0 resnet_model/Relu_27:0 
+Outputs: resnet_model/add_9:0 
+
+Name: resnet_model/Relu_30
+Type: Relu
+Inputs: resnet_model/add_9:0 
+Outputs: resnet_model/Relu_30:0 
+
+Name: Conv__196
+Type: Conv
+Inputs: resnet_model/Relu_30:0 resnet_model/conv2d_34/kernel/read/_240__cf__240:0 resnet_model/conv2d_34/Conv2D_bn_offset:0 
+Outputs: Conv__196:0 
+
+Name: resnet_model/Relu_31
+Type: Relu
+Inputs: Conv__196:0 
+Outputs: resnet_model/Relu_31:0 
+
+Name: Conv__197
+Type: Conv
+Inputs: resnet_model/Relu_31:0 resnet_model/conv2d_35/kernel/read/_241__cf__241:0 resnet_model/conv2d_35/Conv2D_bn_offset:0 
+Outputs: Conv__197:0 
+
+Name: resnet_model/Relu_32
+Type: Relu
+Inputs: Conv__197:0 
+Outputs: resnet_model/Relu_32:0 
+
+Name: Conv__198
+Type: Conv
+Inputs: resnet_model/Relu_32:0 resnet_model/conv2d_36/kernel/read/_242__cf__242:0 resnet_model/conv2d_36/Conv2D_bn_offset:0 
+Outputs: Conv__198:0 
+
+Name: resnet_model/add_10
+Type: Add
+Inputs: Conv__198:0 resnet_model/Relu_30:0 
+Outputs: resnet_model/add_10:0 
+
+Name: resnet_model/Relu_33
+Type: Relu
+Inputs: resnet_model/add_10:0 
+Outputs: resnet_model/Relu_33:0 
+
+Name: Conv__203
+Type: Conv
+Inputs: resnet_model/Relu_33:0 resnet_model/conv2d_37/kernel/read/_243__cf__243:0 resnet_model/conv2d_37/Conv2D_bn_offset:0 
+Outputs: Conv__203:0 
+
+Name: resnet_model/Relu_34
+Type: Relu
+Inputs: Conv__203:0 
+Outputs: resnet_model/Relu_34:0 
+
+Name: Conv__204
+Type: Conv
+Inputs: resnet_model/Relu_34:0 resnet_model/conv2d_38/kernel/read/_244__cf__244:0 resnet_model/conv2d_38/Conv2D_bn_offset:0 
+Outputs: Conv__204:0 
+
+Name: resnet_model/Relu_35
+Type: Relu
+Inputs: Conv__204:0 
+Outputs: resnet_model/Relu_35:0 
+
+Name: Conv__205
+Type: Conv
+Inputs: resnet_model/Relu_35:0 resnet_model/conv2d_39/kernel/read/_245__cf__245:0 resnet_model/conv2d_39/Conv2D_bn_offset:0 
+Outputs: Conv__205:0 
+
+Name: resnet_model/add_11
+Type: Add
+Inputs: Conv__205:0 resnet_model/Relu_33:0 
+Outputs: resnet_model/add_11:0 
+
+Name: resnet_model/Relu_36
+Type: Relu
+Inputs: resnet_model/add_11:0 
+Outputs: resnet_model/Relu_36:0 
+
+Name: Conv__210
+Type: Conv
+Inputs: resnet_model/Relu_36:0 resnet_model/conv2d_40/kernel/read/_247__cf__247:0 resnet_model/conv2d_40/Conv2D_bn_offset:0 
+Outputs: Conv__210:0 
+
+Name: resnet_model/Relu_37
+Type: Relu
+Inputs: Conv__210:0 
+Outputs: resnet_model/Relu_37:0 
+
+Name: Conv__211
+Type: Conv
+Inputs: resnet_model/Relu_37:0 resnet_model/conv2d_41/kernel/read/_248__cf__248:0 resnet_model/conv2d_41/Conv2D_bn_offset:0 
+Outputs: Conv__211:0 
+
+Name: resnet_model/Relu_38
+Type: Relu
+Inputs: Conv__211:0 
+Outputs: resnet_model/Relu_38:0 
+
+Name: Conv__212
+Type: Conv
+Inputs: resnet_model/Relu_38:0 resnet_model/conv2d_42/kernel/read/_249__cf__249:0 resnet_model/conv2d_42/Conv2D_bn_offset:0 
+Outputs: Conv__212:0 
+
+Name: resnet_model/add_12
+Type: Add
+Inputs: Conv__212:0 resnet_model/Relu_36:0 
+Outputs: resnet_model/add_12:0 
+
+Name: resnet_model/Relu_39
+Type: Relu
+Inputs: resnet_model/add_12:0 
+Outputs: resnet_model/Relu_39:0 
+
+Name: Conv__217
+Type: Conv
+Inputs: resnet_model/Relu_39:0 resnet_model/conv2d_43/kernel/read/_250__cf__250:0 resnet_model/conv2d_43/Conv2D_bn_offset:0 
+Outputs: Conv__217:0 
+
+Name: Conv__222
+Type: Conv
+Inputs: resnet_model/Relu_39:0 resnet_model/conv2d_44/kernel/read/_251__cf__251:0 resnet_model/conv2d_44/Conv2D_bn_offset:0 
+Outputs: Conv__222:0 
+
+Name: resnet_model/Relu_40
+Type: Relu
+Inputs: Conv__222:0 
+Outputs: resnet_model/Relu_40:0 
+
+Name: Conv__223
+Type: Conv
+Inputs: resnet_model/Relu_40:0 resnet_model/conv2d_45/kernel/read/_252__cf__252:0 resnet_model/conv2d_45/Conv2D_bn_offset:0 
+Outputs: Conv__223:0 
+
+Name: resnet_model/Relu_41
+Type: Relu
+Inputs: Conv__223:0 
+Outputs: resnet_model/Relu_41:0 
+
+Name: Conv__224
+Type: Conv
+Inputs: resnet_model/Relu_41:0 resnet_model/conv2d_46/kernel/read/_253__cf__253:0 resnet_model/conv2d_46/Conv2D_bn_offset:0 
+Outputs: Conv__224:0 
+
+Name: resnet_model/add_13
+Type: Add
+Inputs: Conv__224:0 Conv__217:0 
+Outputs: resnet_model/add_13:0 
+
+Name: resnet_model/Relu_42
+Type: Relu
+Inputs: resnet_model/add_13:0 
+Outputs: resnet_model/Relu_42:0 
+
+Name: Conv__225
+Type: Conv
+Inputs: resnet_model/Relu_42:0 resnet_model/conv2d_47/kernel/read/_254__cf__254:0 resnet_model/conv2d_47/Conv2D_bn_offset:0 
+Outputs: Conv__225:0 
+
+Name: resnet_model/Relu_43
+Type: Relu
+Inputs: Conv__225:0 
+Outputs: resnet_model/Relu_43:0 
+
+Name: Conv__226
+Type: Conv
+Inputs: resnet_model/Relu_43:0 resnet_model/conv2d_48/kernel/read/_255__cf__255:0 resnet_model/conv2d_48/Conv2D_bn_offset:0 
+Outputs: Conv__226:0 
+
+Name: resnet_model/Relu_44
+Type: Relu
+Inputs: Conv__226:0 
+Outputs: resnet_model/Relu_44:0 
+
+Name: Conv__227
+Type: Conv
+Inputs: resnet_model/Relu_44:0 resnet_model/conv2d_49/kernel/read/_256__cf__256:0 resnet_model/conv2d_49/Conv2D_bn_offset:0 
+Outputs: Conv__227:0 
+
+Name: resnet_model/add_14
+Type: Add
+Inputs: Conv__227:0 resnet_model/Relu_42:0 
+Outputs: resnet_model/add_14:0 
+
+Name: resnet_model/Relu_45
+Type: Relu
+Inputs: resnet_model/add_14:0 
+Outputs: resnet_model/Relu_45:0 
+
+Name: Conv__232
+Type: Conv
+Inputs: resnet_model/Relu_45:0 resnet_model/conv2d_50/kernel/read/_258__cf__258:0 resnet_model/conv2d_50/Conv2D_bn_offset:0 
+Outputs: Conv__232:0 
+
+Name: resnet_model/Relu_46
+Type: Relu
+Inputs: Conv__232:0 
+Outputs: resnet_model/Relu_46:0 
+
+Name: Conv__233
+Type: Conv
+Inputs: resnet_model/Relu_46:0 resnet_model/conv2d_51/kernel/read/_259__cf__259:0 resnet_model/conv2d_51/Conv2D_bn_offset:0 
+Outputs: Conv__233:0 
+
+Name: resnet_model/Relu_47
+Type: Relu
+Inputs: Conv__233:0 
+Outputs: resnet_model/Relu_47:0 
+
+Name: Conv__234
+Type: Conv
+Inputs: resnet_model/Relu_47:0 resnet_model/conv2d_52/kernel/read/_260__cf__260:0 resnet_model/conv2d_52/Conv2D_bn_offset:0 
+Outputs: Conv__234:0 
+
+Name: resnet_model/add_15
+Type: Add
+Inputs: Conv__234:0 resnet_model/Relu_45:0 
+Outputs: resnet_model/add_15:0 
+
+Name: resnet_model/Relu_48
+Type: Relu
+Inputs: resnet_model/add_15:0 
+Outputs: resnet_model/Relu_48:0 
+
+Name: resnet_model/Mean
+Type: ReduceMean
+Inputs: resnet_model/Relu_48:0 
+Outputs: resnet_model/Mean:0 
+
+Name: reshape__269
+Type: Reshape
+Inputs: resnet_model/Mean:0 reshape__269__270 
+Outputs: Transpose__238:0 
+
+Name: resnet_model/Squeeze
+Type: Squeeze
+Inputs: Transpose__238:0 
+Outputs: resnet_model/Squeeze:0 
+
+Name: resnet_model/dense/MatMul
+Type: MatMul
+Inputs: resnet_model/Squeeze:0 resnet_model/dense/kernel/read/_266__cf__266:0 
+Outputs: resnet_model/dense/MatMul:0 
+
+Name: resnet_model/dense/BiasAdd
+Type: Add
+Inputs: resnet_model/dense/MatMul:0 resnet_model/dense/bias/read/_265__cf__265:0 
+Outputs: resnet_model/dense/BiasAdd:0 
+
+Name: resnet_model/final_dense
+Type: Identity
+Inputs: resnet_model/dense/BiasAdd:0 
+Outputs: resnet_model/final_dense:0 
+
+Name: softmax_tensor
+Type: Softmax
+Inputs: resnet_model/final_dense:0 
+Outputs: raw_output___5:0 
+
+Name: graph_outputs_Identity__6
+Type: Identity
+Inputs: raw_output___5:0 
+Outputs: softmax_tensor:0 
+
+Name: ArgMax
+Type: ArgMax
+Inputs: resnet_model/final_dense:0 
+Outputs: raw_output___3:0 
+
+Name: graph_outputs_Identity__4
+Type: Identity
+Inputs: raw_output___3:0 
+Outputs: ArgMax:0 
+=============================

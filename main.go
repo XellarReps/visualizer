@@ -69,12 +69,14 @@ func main() {
 	}
 
 	file := os.Stdout
+	fileFlag := false
 	if args.writeMode == "file" {
-		file, err = os.Open(args.outputPath)
+		file, err = os.OpenFile(args.outputPath, os.O_CREATE|os.O_WRONLY, 0777)
 		if err != nil {
 			fmt.Println(err)
 			return
 		}
+		fileFlag = true
 	}
 
 	if args.infoMode == "graph" {
@@ -92,5 +94,12 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 		return
+	}
+	if fileFlag {
+		err = file.Close()
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
 	}
 }

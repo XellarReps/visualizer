@@ -43,7 +43,7 @@ func (m *ModelInfo) PrintModelInfo(file *os.File) error {
 	if _, err := file.WriteString(fmt.Sprintf("Domain: %s\n", m.Domain)); err != nil {
 		return err
 	}
-	if _, err := file.WriteString("======== Model Info ========\n"); err != nil {
+	if _, err := file.WriteString("============================\n"); err != nil {
 		return err
 	}
 	return nil

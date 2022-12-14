@@ -245,8 +245,13 @@ func (g *Graph) PrintGraphNodes(file *os.File, mode string) error {
 		}
 	}
 
-	_, err := file.WriteString("=============================\n")
-	return err
+	if mode == "graph" {
+		_, err := file.WriteString("=============================\n")
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func (g *Graph) PrintGraph(file *os.File, mode string) error {
